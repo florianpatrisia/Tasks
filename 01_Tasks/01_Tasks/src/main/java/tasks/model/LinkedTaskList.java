@@ -131,10 +131,6 @@ public class LinkedTaskList  extends TaskList {
             return last;
         }
 
-        private void setTask(Task task) {
-            this.task = task;
-        }
-
         private void setLast(Node last) {
             this.last = last;
         }
