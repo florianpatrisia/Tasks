@@ -1,0 +1,11 @@
+2025-03-05 19:00:10 INFO  Main:35 - saved data reading
+2025-03-05 19:00:10 INFO  Main:40 - application start
+2025-03-05 19:00:11 INFO  Controller:74 - Main controller initializing
+2025-03-16 18:41:46 INFO  Main:35 - saved data reading
+2025-03-16 18:41:46 INFO  Main:40 - application start
+2025-03-16 18:41:47 INFO  Controller:74 - Main controller initializing
+2025-03-16 18:42:34 INFO  NewEditController:89 - new/edit window initializing
+2025-03-16 18:49:24 ERROR TaskIO:78 - IO exception reading or writing file
+2025-03-16 18:50:08 INFO  Main:35 - saved data reading
+2025-03-16 18:50:08 INFO  Main:40 - application start
+2025-03-16 18:50:08 INFO  Controller:74 - Main controller initializing
