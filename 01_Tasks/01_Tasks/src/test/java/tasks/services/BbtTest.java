@@ -31,8 +31,12 @@ public class BbtTest {
     // ECP Invalid
     @Test
     public void saveTaskWithInvalidTitle() {
-        Task task = new Task("", new Date(2025 - 1900, Calendar.JANUARY, 1), new Date(2025 - 1900, Calendar.JANUARY, 1), 1);
-        Assertions.assertThrows(IllegalArgumentException.class, () -> service.saveTask(task));
+        Task task = new Task("", new Date(2024, Calendar.JANUARY, 1), new Date(2024, Calendar.JANUARY, 1), 1);
+
+        Assertions.assertThrows(IllegalArgumentException.class, () ->{
+            service.saveTask(task);
+        } );
+
     }
 
     // BVA Valid
@@ -48,7 +52,10 @@ public class BbtTest {
     public void saveTaskWithInvalidDateBoundary() {
         Date invalidDate = new Date(1577836799000L); // 31.12.2019
         Task task = new Task("Invalid date", invalidDate, invalidDate, 1);
-        Assertions.assertThrows(IllegalArgumentException.class, () -> service.saveTask(task));
+
+        Assertions.assertThrows(IllegalArgumentException.class, () -> {
+            service.saveTask(task);
+        });
     }
 }
 

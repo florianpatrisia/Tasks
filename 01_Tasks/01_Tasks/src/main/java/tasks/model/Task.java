@@ -26,36 +26,17 @@ public class Task implements Serializable, Cloneable {
             log.error("time below bound");
             throw new IllegalArgumentException("Time cannot be negative");
         }
+        if(title.isEmpty() || title.length() > 255){
+            log.error("title not good");
+            throw new IllegalArgumentException("Title is out of bounds");
+        }
+
         this.title = title;
         this.time = time;
         this.start = time;
         this.end = time;
     }
     public Task(String title, Date start, Date end, int interval){
-//        long LOWER_BOUND = 1577836800000L;     // 01.01.2020 00:00:00
-//        long UPPER_BOUND = 2524607999000L;     // 31.12.2050 23:59:59
-//
-//        if (start.getTime() < LOWER_BOUND || end.getTime() < LOWER_BOUND) {
-//            log.error("time below bound");
-//            throw new IllegalArgumentException("Time must not be before 1 Jan 2020");
-//        }
-//
-//        if (start.getTime() > UPPER_BOUND || end.getTime() > UPPER_BOUND) {
-//            log.error("time above bound");
-//            throw new IllegalArgumentException("Time must not be after 31 Dec 2050");
-//        }
-        if (start.getTime() < 0 || end.getTime() < 0) {
-            log.error("time below bound");
-            throw new IllegalArgumentException("Time cannot be negative");
-        }
-        if (interval < 1) {
-            log.error("interval < than 1");
-            throw new IllegalArgumentException("interval should me > 1");
-        }
-//        if (title.isEmpty() || title.length() > 255) {
-//            log.error("title not good");
-//            throw new IllegalArgumentException("Title is out of bounds");
-//        }
         this.title = title;
         this.start = start;
         this.end = end;
