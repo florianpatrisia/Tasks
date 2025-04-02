@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><title>testspec Proiect233 - fpir3334_BBT</title>
+<link type="text/css" rel="stylesheet" href="https://www.scs.ubbcluj.ro/testlink/gui/themes/default/css/tl_documents.css" />
+<style type="text/css" media="print">.notprintable { display:none;}</style>
+</head>
+<body>
+<div>
+<div style="float:right;">TestLink Community [configure $tlCfg-&gt;document_generator-&gt;company_name]</div>
+<div>&nbsp;</div><hr />
+<p style="text-align: center;"><img alt="TestLink logo" title="configure using $tlCfg->document_generator->company_logo"  width= height= src="https://www.scs.ubbcluj.ro/testlink/gui/themes/default/images/tl-logo-transparent-25.png" /></p></div>
+<div class="doc_title"><p>Test Specification</p></div>
+<div class="doc_title" style="text-align:left;margin: auto;"><p>Test Project: Proiect233<br/>Test Suite: Proiect233 - fpir3334_BBT</p></div>
+<div class="summary"><p id="printedby">Printed by TestLink on 02/04/2025</p></div>
+<div class="pagefooter" id="copyright">2012 &copy; TestLink Community</div>
+<h1 class="general" style="page-break-before: always">Table Of Contents</h1><div class="toc"><p style="padding-left: 20px;"><b><a href="#toc_1">1.fpir3334_BBT</a></b></p>
+<p style="padding-left: 45px;"><a href="#toc_tc24480">Prj233-9: Test_ECP_Valid</a></p><p style="padding-left: 45px;"><a href="#toc_tc24666">Prj233-33: Test_ECP_Invalid</a></p><p style="padding-left: 45px;"><a href="#toc_tc24671">Prj233-34: Test_BVA_Valid</a></p><p style="padding-left: 45px;"><a href="#toc_tc24675">Prj233-35: Test_BVA_Invalid</a></p></div><h1 class="doclevel" >Scope</h1>
+<div class="txtlevel"><p>Proiect de testare pentru studentii din grupa 233.</p></div>
+ <br/><a name='toc_1'></a>
+<h1 class='doclevel'>1.Test Suite : fpir3334_BBT</h1>
+<div><p>Suită de teste de tip Black-Box pentru verificarea funcționalității de adăugare a unui task nou (F01). Conține teste de validare și de invalidare utiliz&acirc;nd tehnicile ECP (Equivalence Class Partitioning) și BVA (Boundary Value Analysis).</p>
+</div><a name="toc_tc24480"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case Prj233-9: Test_ECP_Valid&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">fpir3334</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br /><p>Verifică dacă o sarcină (task) cu titlu valid și date valide este salvată cu succes &icirc;n sistem folosind ECP</p>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br /><p>Aplicatia este pornita.</p>
+
+<p>Utilizator are acces la formularul de adaugare&nbsp;a unui task.</p>
+
+<p>Titlul taskului trebuie să fie un șir de caractere valid (non-gol).</p>
+
+<p>Datele de &icirc;nceput și sf&acirc;rșit trebuie să fie &icirc;n intervalul permis de aplicație (ex: [01.01.2020, 31.12.2050]).</p>
+
+<p>Data de &icirc;nceput trebuie să fie mai mică sau egală cu data de sf&acirc;rșit.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>Creează un obiect Task cu următoarele valori:</p>
+
+<ul>
+	<li>
+	<p>Titlu: &quot;Titlu valid&quot;</p>
+	</li>
+	<li>
+	<p>Data de &icirc;nceput: 01.01.2025</p>
+	</li>
+	<li>
+	<p>Data de sf&acirc;rșit: 01.01.2025</p>
+	</li>
+	<li>
+	<p>Interval: 1</p>
+	</li>
+</ul>
+</td><td></td></tr><tr><td width="5">3</td><td><p>Apasă pe &quot;Salvare&quot;</p>
+</td><td><p>Task-ul este salvat cu succes si se afiseaza in lista de Task-uri, fara a fi aruncata vreo exceptie</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td > name of the autotest class:</td><td  colspan = "3" >tasks.services.BbtTest.java</td></tr>
+<tr><td > name of the test method:</td><td  colspan = "3" >tasks.services.BbtTest.saveTaskWithValidTitle()</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="3">&nbsp;None<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">&nbsp;None<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc24666"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case Prj233-33: Test_ECP_Invalid&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">fpir3334</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br /><p>Verifică dacă salvarea unei sarcini cu un titlu invalid (șir gol) este tratată corect de sistem, arunc&acirc;nd o excepție.</p>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br /><p>Aplicația este pornită.</p>
+
+<p>Utilizatorul are acces la formularul de adăugare a unui task.</p>
+
+<p>Titlul taskului trebuie să respecte regula de validitate: să nu fie gol.</p>
+
+<p>Serviciul TasksService este inițializat și lista este goală.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>Creează un obiect Task cu următoarele valori:</p>
+
+<ul>
+	<li>
+	<p>Titlu: &quot;&quot; (șir gol)</p>
+	</li>
+	<li>
+	<p>Data de &icirc;nceput: 01.01.2025</p>
+	</li>
+	<li>
+	<p>Data de sf&acirc;rșit: 01.01.2025</p>
+	</li>
+	<li>
+	<p>Interval: 1</p>
+	</li>
+</ul>
+</td><td></td></tr><tr><td width="5">2</td><td><p>Se apasa butonul &quot;Salvare&quot;</p>
+</td><td><p>Se aruncă o excepție IllegalArgumentException.Task-ul nu este salvat &icirc;n listă.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td > name of the autotest class:</td><td  colspan = "3" >tasks.services.BbtTest.java</td></tr>
+<tr><td > name of the test method:</td><td  colspan = "3" >tasks.services.BbtTest.saveTaskWithInvalidTitle()</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="3">&nbsp;None<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">&nbsp;None<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc24671"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case Prj233-34: Test_BVA_Valid&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">fpir3334</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br /><p>Verifică dacă o sarcină (task) cu dată de &icirc;nceput și sf&acirc;rșit exact pe limita inferioară acceptată (01.01.2020) este salvată cu succes.</p>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br /><p>Aplicația este pornită.</p>
+
+<p>Lista de sarcini este goală.</p>
+
+<p>Serviciul TasksService este inițializat corect.</p>
+
+<p>Intervalul valid pentru dată este [01.01.2020, 31.12.2050].</p>
+
+<p>Titlul taskului este valid (non-gol).</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>Creează un obiect Task cu următoarele valori:</p>
+
+<ul>
+	<li>
+	<p>Titlu: Valid date</p>
+	</li>
+	<li>
+	<p>Data de &icirc;nceput: 01.01.2020</p>
+	</li>
+	<li>
+	<p>Data de sf&acirc;rșit: 01.01.2020</p>
+	</li>
+	<li>
+	<p>Interval: 1</p>
+	</li>
+</ul>
+</td><td></td></tr><tr><td width="5">2</td><td><p>Se apasa butonul &quot;Salvare&quot;</p>
+</td><td><p>Task-ul este salvat cu succes și nu este aruncată nicio excepție.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td > name of the autotest class:</td><td  colspan = "3" >tasks.services.BbtTest.java</td></tr>
+<tr><td > name of the test method:</td><td  colspan = "3" >tasks.services.BbtTest.saveTaskWithValidDateBoundary()</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="3">&nbsp;None<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">&nbsp;None<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc24675"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case Prj233-35: Test_BVA_Invalid&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">fpir3334</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br /><p>Verifică dacă o sarcină (task) cu dată sub limita inferioară acceptată (mai devreme de 01.01.2020) este respinsă de aplicație.</p>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br /><p>Aplicația este pornită.</p>
+
+<p>Lista de sarcini este goală (sau curățată &icirc;nainte de test).</p>
+
+<p>Serviciul TasksService este inițializat corect.</p>
+
+<p>Intervalul acceptat pentru dată este [01.01.2020, 31.12.2050].</p>
+
+<p>Titlul taskului este valid (non-gol).</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>Creează un obiect Task cu următoarele valori:</p>
+
+<ul>
+	<li>
+	<p>Titlu: Invalid date</p>
+	</li>
+	<li>
+	<p>Data de &icirc;nceput: 31.12.2019 (sub limita validă)</p>
+	</li>
+	<li>
+	<p>Data de sf&acirc;rșit: 31.12.2019</p>
+	</li>
+	<li>
+	<p>Interval: 1</p>
+	</li>
+</ul>
+</td><td></td></tr><tr><td width="5">2</td><td><p>Se apasa butonul &quot;Salvare&quot;</p>
+</td><td><p>Sistemul aruncă o excepție (IllegalArgumentException) și nu salvează task-ul.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td > name of the autotest class:</td><td  colspan = "3" >tasks.services.BbtTest.java</td></tr>
+<tr><td > name of the test method:</td><td  colspan = "3" >tasks.services.BbtTest.saveTaskWithInvalidDateBoundary()</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="3">&nbsp;None<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">&nbsp;None<br/></td></tr>
+</table>
+</div>
+
+</body>
+</html>

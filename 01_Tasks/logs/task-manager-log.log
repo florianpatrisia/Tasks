@@ -1,0 +1,65 @@
+2025-03-05 19:03:45 INFO  Main:35 - saved data reading
+2025-03-05 19:03:45 INFO  Main:40 - application start
+2025-03-05 19:03:45 INFO  Controller:74 - Main controller initializing
+2025-03-19 12:26:44 INFO  Main:35 - saved data reading
+2025-03-19 12:26:44 INFO  Main:40 - application start
+2025-03-19 12:26:45 INFO  Controller:74 - Main controller initializing
+2025-03-19 12:26:50 INFO  NewEditController:89 - new/edit window initializing
+2025-03-19 12:27:17 ERROR TaskIO:78 - IO exception reading or writing file
+2025-03-19 12:27:23 INFO  NewEditController:89 - new/edit window initializing
+2025-03-19 12:27:25 INFO  NewEditController:89 - new/edit window initializing
+2025-03-19 12:27:43 ERROR TaskIO:78 - IO exception reading or writing file
+2025-03-19 12:27:58 INFO  Main:35 - saved data reading
+2025-03-19 12:27:58 INFO  Main:40 - application start
+2025-03-19 12:27:58 INFO  Controller:74 - Main controller initializing
+2025-03-19 12:28:01 INFO  NewEditController:89 - new/edit window initializing
+2025-03-19 12:28:07 ERROR TaskIO:78 - IO exception reading or writing file
+2025-03-19 12:28:07 ERROR TaskIO:78 - IO exception reading or writing file
+2025-03-19 12:28:21 INFO  TaskInfoController:24 - task info window initializing
+2025-03-19 12:28:21 ERROR Controller:127 - error loading task-info.fxml
+2025-03-19 12:28:23 INFO  TaskInfoController:24 - task info window initializing
+2025-03-19 12:28:23 ERROR Controller:127 - error loading task-info.fxml
+2025-03-19 12:28:24 INFO  TaskInfoController:24 - task info window initializing
+2025-03-19 12:28:24 ERROR Controller:127 - error loading task-info.fxml
+2025-03-19 18:21:37 INFO  Main:35 - saved data reading
+2025-03-19 18:21:37 INFO  Main:40 - application start
+2025-03-19 18:21:38 INFO  Controller:74 - Main controller initializing
+2025-03-19 18:21:50 INFO  NewEditController:89 - new/edit window initializing
+2025-03-19 18:21:59 ERROR TaskIO:78 - IO exception reading or writing file
+2025-03-19 18:22:08 INFO  NewEditController:89 - new/edit window initializing
+2025-03-19 18:22:17 ERROR TaskIO:78 - IO exception reading or writing file
+2025-03-19 18:22:20 ERROR TaskIO:78 - IO exception reading or writing file
+2025-03-19 18:22:25 INFO  NewEditController:89 - new/edit window initializing
+2025-03-19 18:22:30 INFO  NewEditController:89 - new/edit window initializing
+2025-03-19 18:22:36 ERROR TaskIO:78 - IO exception reading or writing file
+2025-03-19 18:22:41 INFO  NewEditController:89 - new/edit window initializing
+2025-03-19 18:22:47 ERROR TaskIO:78 - IO exception reading or writing file
+2025-03-19 18:22:52 INFO  NewEditController:89 - new/edit window initializing
+2025-03-19 18:23:14 ERROR TaskIO:78 - IO exception reading or writing file
+2025-03-19 18:23:48 INFO  NewEditController:89 - new/edit window initializing
+2025-03-19 18:24:00 ERROR TaskIO:78 - IO exception reading or writing file
+2025-03-19 18:24:06 ERROR TaskIO:78 - IO exception reading or writing file
+2025-03-19 18:24:16 ERROR TaskIO:78 - IO exception reading or writing file
+2025-03-19 18:29:51 INFO  Main:35 - saved data reading
+2025-03-19 18:29:51 INFO  Main:40 - application start
+2025-03-19 18:29:51 INFO  Controller:74 - Main controller initializing
+2025-03-19 18:30:00 INFO  NewEditController:89 - new/edit window initializing
+2025-03-19 18:30:12 ERROR TaskIO:78 - IO exception reading or writing file
+2025-03-19 18:30:17 ERROR TaskIO:78 - IO exception reading or writing file
+2025-03-19 18:30:26 ERROR TaskIO:78 - IO exception reading or writing file
+2025-03-19 18:30:36 ERROR TaskIO:78 - IO exception reading or writing file
+2025-03-19 18:30:40 ERROR TaskIO:78 - IO exception reading or writing file
+2025-03-29 19:20:24 INFO  Main:35 - saved data reading
+2025-03-29 19:20:24 INFO  Main:40 - application start
+2025-03-29 19:20:26 INFO  Controller:74 - Main controller initializing
+2025-03-29 19:20:29 INFO  NewEditController:89 - new/edit window initializing
+2025-03-31 19:55:38 INFO  Main:35 - saved data reading
+2025-03-31 19:55:38 INFO  Main:40 - application start
+2025-03-31 19:55:38 INFO  Controller:74 - Main controller initializing
+2025-03-31 20:23:58 INFO  Main:35 - saved data reading
+2025-03-31 20:23:58 INFO  Main:40 - application start
+2025-03-31 20:23:58 INFO  Controller:74 - Main controller initializing
+2025-03-31 20:24:00 INFO  NewEditController:89 - new/edit window initializing
+2025-03-31 20:24:04 ERROR TaskIO:78 - IO exception reading or writing file
+2025-03-31 20:24:19 ERROR Task:56 - title not good
+2025-03-31 20:24:23 ERROR Task:56 - title not good
