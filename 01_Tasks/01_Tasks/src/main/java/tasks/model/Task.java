@@ -30,7 +30,7 @@ public class Task implements Serializable, Cloneable {
             log.error("title not good");
             throw new IllegalArgumentException("Title is out of bounds");
         }
-
+        this.active = true;
         this.title = title;
         this.time = time;
         this.start = time;

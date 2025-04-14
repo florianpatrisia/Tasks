@@ -15,13 +15,22 @@ public class TasksOperations {
         System.out.println(start);
         System.out.println(end);
         ArrayList<Task> incomingTasks = new ArrayList<>();
-        for (Task t : tasks) {
-            Date nextTime = t.nextTimeAfter(start);
-            if (nextTime != null && (nextTime.before(end) || nextTime.equals(end))) {
-                incomingTasks.add(t);
-                System.out.println(t.getTitle());
+        if (end != null && start != null) {
+            for (Task t : tasks) {
+                Date nextTime = t.nextTimeAfter(start);
+                if (nextTime != null && (nextTime.before(end) || nextTime.equals(end))) {
+                    incomingTasks.add(t);
+                    System.out.println(t.getTitle());
+                }
             }
         }
+
+        if (incomingTasks.isEmpty()) {
+            ArrayList<Task> emptyList = new ArrayList<>();
+            emptyList.add(new Task("Empty", new Date()));
+            return emptyList;
+        }
+
         return incomingTasks;
     }
     public SortedMap<Date, Set<Task>> calendar( Date start, Date end){
