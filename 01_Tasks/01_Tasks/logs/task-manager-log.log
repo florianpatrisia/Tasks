@@ -4,3 +4,20 @@
 2025-02-22 16:46:09 INFO  NewEditController:89 - new/edit window initializing
 2025-02-22 16:46:36 INFO  NewEditController:89 - new/edit window initializing
 2025-02-22 16:47:33 INFO  NewEditController:89 - new/edit window initializing
+2025-04-02 18:32:01 ERROR TasksService:80 - Time must not be before 1 Jan 2020
+2025-04-02 18:32:01 ERROR TasksService:85 - Time must not be after 31 Dec 2050
+2025-04-02 18:32:01 ERROR TasksService:86 - Start time: 61662204000000 End time: 61662204000000
+2025-04-02 18:32:15 ERROR TasksService:85 - Time must not be after 31 Dec 2050
+2025-04-02 18:32:15 ERROR TasksService:86 - Start time: 2524608000000 End time: 2524608000000
+2025-04-02 18:32:15 ERROR TasksService:98 - Title is out of bounds
+2025-04-02 18:32:15 ERROR TasksService:98 - Title is out of bounds
+2025-04-02 18:32:15 ERROR TasksService:80 - Time must not be before 1 Jan 2020
+2025-04-02 18:32:15 ERROR TasksService:80 - Time must not be before 1 Jan 2020
+2025-04-02 18:32:15 ERROR TasksService:98 - Title is out of bounds
+2025-04-02 19:03:46 ERROR TasksService:85 - Time must not be after 31 Dec 2050
+2025-04-02 19:03:46 ERROR TasksService:86 - Start time: 2524608000000 End time: 2524608000000
+2025-04-02 19:03:46 ERROR TasksService:98 - Title is out of bounds
+2025-04-02 19:03:46 ERROR TasksService:98 - Title is out of bounds
+2025-04-02 19:03:46 ERROR TasksService:80 - Time must not be before 1 Jan 2020
+2025-04-02 19:03:46 ERROR TasksService:80 - Time must not be before 1 Jan 2020
+2025-04-02 19:03:46 ERROR TasksService:98 - Title is out of bounds
