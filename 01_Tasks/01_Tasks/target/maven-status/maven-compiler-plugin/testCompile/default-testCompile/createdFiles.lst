@@ -1,0 +1,12 @@
+tasks\unit\ETestTask.class
+tasks\integration\TaskIntegrationWithDomainTest.class
+tasks\services\BbtTest.class
+tasks\integration\TaskIntegrationWithoutDomainTest.class
+tasks\services\TaskServiceTest$BvaTesting.class
+tasks\unit\STestTasksService.class
+tasks\services\TaskServiceTest.class
+tasks\services\DateServiceTest.class
+tasks\model\TaskTest.class
+tasks\unit\RTestArrayTaskList.class
+tasks\model\TaskOperationTest.class
+tasks\services\TaskServiceTest$EcpTesting.class

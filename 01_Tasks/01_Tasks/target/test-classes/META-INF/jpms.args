@@ -1,0 +1,4 @@
+--patch-module
+tasks=_
+--add-reads
+tasks=ALL-UNNAMED

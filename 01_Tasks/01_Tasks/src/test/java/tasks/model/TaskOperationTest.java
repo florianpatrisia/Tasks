@@ -166,4 +166,22 @@ class TaskOperationTest {
         // Assert
         Assertions.assertEquals(2, result.size());
     }
+
+    @Test
+    public void F02_incoming_repetitive() {
+        // Arrange
+        ObservableList<Task> tasks = FXCollections.observableArrayList();
+
+        tasks.add(new Task("TASK1", new Date(121, 04, 20, 12,30)));
+        // valid
+        tasks.add(new Task("TASK2", new Date(121, 04, 22, 12,30)));
+
+        TasksOperations top = new TasksOperations(tasks);
+
+        // Act
+        ArrayList<Task> result = (ArrayList<Task>) top.incoming(new Date(121, 04, 17, 12,30), new Date(121, 04, 22, 12,30));
+
+        // Assert
+        Assertions.assertEquals(2, result.size());
+    }
 }
