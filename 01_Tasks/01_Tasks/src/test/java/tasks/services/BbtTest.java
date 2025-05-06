@@ -31,12 +31,10 @@ public class BbtTest {
     // ECP Invalid
     @Test
     public void saveTaskWithInvalidTitle() {
-        Task task = new Task("", new Date(2024, Calendar.JANUARY, 1), new Date(2024, Calendar.JANUARY, 1), 1);
-
-        Assertions.assertThrows(IllegalArgumentException.class, () ->{
+        Assertions.assertThrows(IllegalArgumentException.class, () -> {
+            Task task = new Task("", new Date(2024, Calendar.JANUARY, 1), new Date(2024, Calendar.JANUARY, 1), 1);
             service.saveTask(task);
-        } );
-
+        });
     }
 
     // BVA Valid
