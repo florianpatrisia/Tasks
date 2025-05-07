@@ -27,6 +27,15 @@ public class TaskIntegrationWithoutDomainTest {
     }
 
     @Test
+    public void Test3_constructor() {
+        task = Mockito.mock(Task.class);
+        taskList = new ArrayTaskList();
+        tasksService = new TasksService(taskList);
+
+        Mockito.when(task.getTask()).thenReturn(new Task("Title", new Date(0), new Date(1), 2));
+    }
+
+    @Test
     public void Test1_getObservableList() {
         taskList.add(task.getTask());
         Assertions.assertEquals(1, tasksService.getObservableList().size());

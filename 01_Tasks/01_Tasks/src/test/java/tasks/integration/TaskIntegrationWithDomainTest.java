@@ -3,6 +3,7 @@ package tasks.integration;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
 import tasks.model.ArrayTaskList;
 import tasks.model.Task;
 import tasks.services.TasksService;
@@ -18,6 +19,12 @@ public class TaskIntegrationWithDomainTest {
 
     @BeforeEach
     public void setUp() {
+        taskList = new ArrayTaskList();
+        tasksService = new TasksService(taskList);
+    }
+
+    @Test
+    public void Test3_constructor() {
         taskList = new ArrayTaskList();
         tasksService = new TasksService(taskList);
     }
