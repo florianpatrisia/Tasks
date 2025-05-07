@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: tasks.services.TaskServiceTest$BvaTesting
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 s - in tasks.services.TaskServiceTest$BvaTesting
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 s - in tasks.services.TaskServiceTest$BvaTesting
