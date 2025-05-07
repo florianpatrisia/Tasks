@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: tasks.integration.TaskIntegrationWithDomainTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.303 s - in tasks.integration.TaskIntegrationWithDomainTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.146 s - in tasks.integration.TaskIntegrationWithDomainTest

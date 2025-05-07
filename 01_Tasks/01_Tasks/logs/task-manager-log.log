@@ -190,3 +190,12 @@
 2025-05-07 14:50:38 ERROR TasksService:80 - Time must not be before 1 Jan 2020
 2025-05-07 14:50:38 ERROR Task:44 - time below bound
 2025-05-07 14:50:38 ERROR Task:48 - title not good
+2025-05-07 18:49:28 ERROR TasksService:80 - Time must not be before 1 Jan 2020
+2025-05-07 18:49:28 ERROR Task:48 - title not good
+2025-05-07 18:49:28 ERROR TasksService:85 - Time must not be after 31 Dec 2050
+2025-05-07 18:49:28 ERROR TasksService:86 - Start time: 2524608000000 End time: 2524608000000
+2025-05-07 18:49:28 ERROR Task:48 - title not good
+2025-05-07 18:49:28 ERROR Task:48 - title not good
+2025-05-07 18:49:28 ERROR TasksService:80 - Time must not be before 1 Jan 2020
+2025-05-07 18:49:28 ERROR Task:44 - time below bound
+2025-05-07 18:49:28 ERROR Task:48 - title not good
